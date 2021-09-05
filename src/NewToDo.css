@@ -1,9 +1,9 @@
 
 form.new-todo {
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
-    padding: 16px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
+	padding: 16px 0px;
 }
 
 form.new-todo input {
@@ -11,13 +11,13 @@ form.new-todo input {
 }
 
 form.new-todo button {
-    border: none;
-    background-color: #0984e3;
-    color: white;
-    border-radius: 12px;
-    width: 18%;
-    box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
-    font-family: 'Montserrat';
+	border: none;
+	background-color: #0984e3;
+	color: white;
+	border-radius: 12px;
+	width: 18%;
+	box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
+	font-family: 'Montserrat';
 }
 
 @media screen and (max-width: 960px) {
