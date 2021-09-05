@@ -7,11 +7,11 @@ import Button from './Button.js';
 import './App.css';
 
 class Plan {
-    constructor(ID, text) {
-      this.ID = ID;
-      this.text = text;
-      this.status = 'active';
-  }
+	constructor(ID, text) {
+		this.ID = ID;
+		this.text = text;
+		this.status = 'active';
+	}
 }
 
 const placehold1 = new Plan (-1, "Placeholder Plan");
@@ -24,6 +24,17 @@ var tempList = [];
 var currentGroup = 'all';
 var initialize = 0;
 var quota = 0;
+
+function loadData() {
+	masterList = JSON.parse(localStorage.getItem("toDoList"));
+	allTimeAdded = localStorage.getItem("allTimeAdded");
+}
+
+function saveData() {
+	localStorage.setItem("toDoList", JSON.stringify(masterList));
+	localStorage.setItem("allTimeAdded", allTimeAdded);
+}
+
 
 function App() {
 	var [state, setState] = useState(tempList);
@@ -54,6 +65,8 @@ function App() {
 			}
 		}
 
+		saveData();
+
 		prepareList();
 	}
 
@@ -69,16 +82,10 @@ function App() {
 					}
 				}
 			}
+		
+		saveData();
 
 		prepareList();
-	}
-
-	if(initialize === 0) {
-		masterList = [...masterList, placehold1];
-		masterList = [...masterList, placehold2];
-		prepareList()
-		setState(tempList);
-		initialize = 1;
 	}
 
 	function setFilter(newFilter) {
@@ -89,7 +96,23 @@ function App() {
 	function addToDo(toDo) {
 		const newEntry = new Plan(allTimeAdded++, toDo);
 		masterList = [...masterList, newEntry];
+		saveData();
 		prepareList();
+	}
+
+	if(initialize === 0) {
+		var getToDoList = JSON.parse(localStorage.getItem("toDoList"));
+		if(getToDoList === null) {
+			masterList = [...masterList, placehold1];
+			masterList = [...masterList, placehold2];
+		} else {
+			loadData();
+		}
+
+		prepareList()
+		setState(tempList);
+		
+		initialize = 1;
 	}
 
 	return (
@@ -101,6 +124,15 @@ function App() {
 			<ViewToDo addToDo={addToDo} handleStatus={handleStatus} handleDelete={handleDelete} masterList={tempList} currentGroup={currentGroup}/>
 			<div id="delete-all-cont" class={(currentGroup === 'complete') ? ((quota > 0) ? "" : "boosted") : "hidden"}>
 				<Button type="button" id="delete-all" color="btn-red" trigger={() => handleDelete("all")} icon="delete" text="delete all"/>
+			</div>
+			<div class={(quota > 0) ? "hidden" : "empty-sign"}>
+				<div>
+					
+				</div>
+				<span>
+					Nothing to see here, just an empty to-do list.<br/>
+					<a href='https://www.freepik.com/vectors/people'>People vector created by pch.vector - www.freepik.com</a>
+				</span>
 			</div>
 			<footer> 
 				Created by&nbsp;<a href="https://github.com/josejovian" title="Jose Jovian">josejovian</a>&nbsp;-&nbsp;<a href="https://devchallenges.io/" title="Dev Challenges">devChallenges.io</a>
