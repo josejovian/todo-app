@@ -8,24 +8,24 @@ import './NewToDo.css';
 function NewToDo(props) {
 	const [plan, setPlan] = useState(''); 
 
-    function handleSubmit(e) {
+	function handleSubmit(e) {
 		e.preventDefault();
 		if(plan !== '') {
 			props.handleSubmit(plan);
 			setPlan('');
 		}
-    }
+	}
 
-    function handleChange(e) {
-        setPlan(e.target.value);
-    }
+	function handleChange(e) {
+		setPlan(e.target.value);
+	}
 
-    return (
-        <form class={(props.currentGroup !== "complete") ? "new-todo" : "new-todo hidden"} onSubmit={handleSubmit}>
+	return (
+		<form class={(props.currentGroup !== "complete") ? "new-todo" : "new-todo hidden"} onSubmit={handleSubmit}>
 			<InputBox class="new-todo" placeholder="add details" trigger={handleChange} value={plan}/>
 			<Button type="submit" size="btn-md" color="btn-blue" text="Add"/>
-        </form>
-    );
+		</form>
+	);
 }
 
 export default NewToDo;

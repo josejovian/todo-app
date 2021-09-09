@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 
 html {
-    margin: 0 auto;
-    width: 40%;
+	margin: 0 auto;
+	width: 40%;
 	transition: all 1s;
 }
 
 header {
-    text-align: center;
+	text-align: center;
 }
 
 h1 {
-    font-size: 2rem;
-    font-family: 'Raleway';
-    font-weight: 700;
+	font-size: 2rem;
+	font-family: 'Raleway';
+	font-weight: 700;
 }
 
 .delete-all-cont {
@@ -24,20 +24,20 @@ h1 {
 }
 
 .delete-all {
-    border: none;
-    background-color: #e74c3c;
-    color: white;
-    border-radius: 12px;
-    width: 32%;
-    box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
-    font-family: 'Montserrat';
+	border: none;
+	background-color: #e74c3c;
+	color: white;
+	border-radius: 12px;
+	width: 32%;
+	box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
+	font-family: 'Montserrat';
 	padding: 16px;
 }
 
 .icon {
-    font-family: 'Material Icons'!important;
-    background-color: white;
-    border: 0px;
+	font-family: 'Material Icons'!important;
+	background-color: white;
+	border: 0px;
 }
 
 /* button.delete-all {
@@ -49,7 +49,7 @@ h1 {
 } */
 
 .hidden {
-    display: none!important;
+	display: none!important;
 }
 
 .transparent {

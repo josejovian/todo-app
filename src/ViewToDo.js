@@ -17,14 +17,14 @@ function ViewToDo(props) {
 
 	const listToDos = props.masterList.map(getLi);
 	
-    return (
-        <div class="list">
-            <NewToDo currentGroup={props.currentGroup} handleSubmit={props.addToDo}/>
-            <ul>
-                {listToDos}
-            </ul>
-        </div>
-    );
+	return (
+		<div class="list">
+			<NewToDo currentGroup={props.currentGroup} handleSubmit={props.addToDo}/>
+			<ul>
+				{listToDos}
+			</ul>
+		</div>
+	);
 
 }
 

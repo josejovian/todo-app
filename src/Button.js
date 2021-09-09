@@ -21,12 +21,12 @@ function Button(props) {
 		)
 	}
 
-    return (
+	return (
 		<button type={props.type} id={props.id} class={"btn "+props.size+" "+props.color+" "+props.flair} onClick={props.trigger}>
 			<i class="material-icons material-icons-outlined">{props.icon}</i>
 			<span>{props.text}</span>
 		</button>
-    );
+	);
 
 }
 
