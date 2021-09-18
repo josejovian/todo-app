@@ -17,10 +17,10 @@ function FilterBar(props) {
 	}
 
 	return (
-		<form class="label-bar" onSubmit={setFilter}> 
-			<Button type="submit" flair="btn-line" class={(newFilter === 'all') ? "active" : "transparent"} trigger={() => newFilter = 'all'} text="All"/>
-			<Button type="submit" flair="btn-line" class={(newFilter === 'active') ? "active" : "transparent"} trigger={() => newFilter = 'active'} text="Active"/>
-			<Button type="submit" flair="btn-line" class={(newFilter === 'complete') ? "active" : "transparent"} trigger={() => newFilter = 'complete'} text="Completed"/>
+		<form className="label-bar" onSubmit={setFilter}> 
+			<Button type="submit" flair="btn-line" className={(newFilter === 'all') ? "active" : "transparent"} trigger={() => newFilter = 'all'} text="All"/>
+			<Button type="submit" flair="btn-line" className={(newFilter === 'active') ? "active" : "transparent"} trigger={() => newFilter = 'active'} text="Active"/>
+			<Button type="submit" flair="btn-line" className={(newFilter === 'complete') ? "active" : "transparent"} trigger={() => newFilter = 'complete'} text="Completed"/>
 		</form>
 	);
 

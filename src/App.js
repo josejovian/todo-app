@@ -122,10 +122,10 @@ function App() {
 			</header>
 			<FilterBar setFilter={setFilter} currentGroup={currentGroup}/>
 			<ViewToDo addToDo={addToDo} handleStatus={handleStatus} handleDelete={handleDelete} masterList={tempList} currentGroup={currentGroup}/>
-			<div id="delete-all-cont" class={(currentGroup === 'complete') ? ((quota > 0) ? "" : "boosted") : "hidden"}>
+			<div id="delete-all-cont" className={(currentGroup === 'complete') ? ((quota > 0) ? "" : "boosted") : "hidden"}>
 				<Button type="button" id="delete-all" color="btn-red" trigger={() => handleDelete("all")} icon="delete" text="delete all"/>
 			</div>
-			<div class={(quota > 0) ? "hidden" : "empty-sign"}>
+			<div className={(quota > 0) ? "hidden" : "empty-sign"}>
 				<div>
 					
 				</div>

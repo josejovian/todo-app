@@ -11,14 +11,14 @@ function ViewToDo(props) {
 		if(x.ID >= 0) {
 			return (<CheckBox handleStatus={props.handleStatus} handleDelete={props.handleDelete} currentGroup={props.currentGroup} id={x.ID} text={x.text} status={x.status} key={x.ID}/>)
 		} else {
-			return (<li class="hidden" key={x.ID}></li>);
+			return (<li className="hidden" key={x.ID}></li>);
 		}
 	}
 
 	const listToDos = props.masterList.map(getLi);
 	
 	return (
-		<div class="list">
+		<div className="list">
 			<NewToDo currentGroup={props.currentGroup} handleSubmit={props.addToDo}/>
 			<ul>
 				{listToDos}

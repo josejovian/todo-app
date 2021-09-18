@@ -96,7 +96,7 @@ footer {
 .empty-sign div {
 	width: 320px;
 	height: 200px;
-	background-image: url('./empty-image.jpg');
+	background-image: url('https://raw.githubusercontent.com/josejovian/todo-app/master/public/empty-image.jpg');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	align-self: center;

@@ -7,6 +7,27 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+html {
+	overflow-x: hidden;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+body {
+	position: relative;
+	animation-name: fade-in;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 	monospace;

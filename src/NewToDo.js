@@ -21,8 +21,8 @@ function NewToDo(props) {
 	}
 
 	return (
-		<form class={(props.currentGroup !== "complete") ? "new-todo" : "new-todo hidden"} onSubmit={handleSubmit}>
-			<InputBox class="new-todo" placeholder="add details" trigger={handleChange} value={plan}/>
+		<form className={(props.currentGroup !== "complete") ? "new-todo" : "new-todo hidden"} onSubmit={handleSubmit}>
+			<InputBox className="new-todo" placeholder="add details" trigger={handleChange} value={plan}/>
 			<Button type="submit" size="btn-md" color="btn-blue" text="Add"/>
 		</form>
 	);
