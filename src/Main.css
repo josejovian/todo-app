@@ -4,15 +4,4 @@
   display: none !important;
 }
 
-.input-box {
-  border: 2px solid lightgray;
-  border-radius: 8px;
-  padding: 16px 12px;
-  font-family: "Montserrat";
-}
-
-.input-box:placeholder {
-  color: lightgray;
-}
-
-/*# sourceMappingURL=InputBox.css.map */
+/*# sourceMappingURL=Main.css.map */

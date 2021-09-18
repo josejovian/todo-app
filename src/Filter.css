@@ -1,48 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+.hidden {
+  display: none !important;
+}
 
 form.label-bar {
-	margin: 0 auto;
-	display: flex;
-	width: 100%;
-	justify-content: space-around;
-	border-bottom: 2px solid lightgray;
-	font-weight: bold;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-bottom: 2px solid lightgray;
+  font-weight: bold;
 }
 
 form.label-bar button {
-	position: relative;
-	background-color: inherit;
-	border: none;
-	padding: 24px 0px;
-	width: 20%;
-	font-family: 'Montserrat';
-	font-weight: 600;
-	font-size: 0.9rem;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  padding: 24px 0px;
+  width: 20%;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 form.label-bar div {
-	opacity: 0!important;
+  opacity: 0 !important;
 }
 
 form.label-bar button {
-	opacity: 1;
+  opacity: 1;
 }
 
 form.label-bar button:hover div {
-	opacity: 1!important;
+  opacity: 1 !important;
 }
 
 form.label-bar div {
-	position: absolute;
-	bottom: -4px;
-	border-top: 3px solid #0984e3;
-	border-radius: 3px;
-	width: 100%;
-	height: 4px;
-	align-self: flex-end;
-	opacity: 1;
-	transition: all 0.2s;
+  position: absolute;
+  bottom: -4px;
+  border-top: 3px solid #0984e3;
+  border-radius: 3px;
+  width: 100%;
+  height: 4px;
+  align-self: flex-end;
+  opacity: 1;
+  transition: all 0.2s;
 }
 
 form.label-bar div.active {
-	opacity: 1!important;
+  opacity: 1 !important;
 }
+
+/*# sourceMappingURL=Filter.css.map */

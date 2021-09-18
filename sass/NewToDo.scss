@@ -1,0 +1,35 @@
+@import 'Main.scss';
+
+form.new-todo {
+	display: flex;
+	justify-content: space-between;
+	align-self: flex-start;
+	padding: 16px 0px;
+}
+
+form.new-todo input {
+	width: 29vw;
+}
+
+form.new-todo button {
+	border: none;
+	background-color: $blue;
+	color: white;
+	border-radius: 12px;
+	width: 18%;
+	box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
+	font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 960px) {
+	form.new-todo {
+		width: 90%;
+		margin: 0 auto;
+	}
+	form.new-todo input {
+		width: calc(100% - 128px);
+	}
+	form.new-todo button {
+		width: 80px;
+	}
+}

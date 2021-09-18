@@ -1,127 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+.hidden {
+  display: none !important;
+}
 
 html {
-	margin: 0 auto;
-	width: 40%;
-	transition: all 1s;
+  margin: 0 auto;
+  width: 40%;
+  transition: all 1s;
 }
 
 header {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	font-size: 2rem;
-	font-family: 'Raleway';
-	font-weight: 700;
+  font-size: 2rem;
+  font-family: "Raleway";
+  font-weight: 700;
 }
 
 .delete-all-cont {
-	display: flex;
-	justify-content: flex-end;
-	padding: 16px 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0px;
 }
 
 .delete-all {
-	border: none;
-	background-color: #e74c3c;
-	color: white;
-	border-radius: 12px;
-	width: 32%;
-	box-shadow: 0 4px 12px 0px rgba(0,0,0,.25);
-	font-family: 'Montserrat';
-	padding: 16px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 12px;
+  width: 32%;
+  box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat";
+  padding: 16px;
 }
 
 .icon {
-	font-family: 'Material Icons'!important;
-	background-color: white;
-	border: 0px;
-}
-
-/* button.delete-all {
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	width: 160px;
-} */
-
-.hidden {
-	display: none!important;
+  font-family: "Material Icons" !important;
+  background-color: white;
+  border: 0px;
 }
 
 .transparent {
-	opacity: 0;
+  opacity: 0;
 }
 
 #delete-all-cont {
-	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
 }
 
 .boosted {
-	margin-top: 16px!important;
+  margin-top: 16px !important;
 }
 
 #delete-all {
-	justify-self: flex-start!important;
-	align-self: flex-start!important;
+  justify-self: flex-start !important;
+  align-self: flex-start !important;
 }
 
 footer {
-	font-size: 0.8em;
-	box-shadow: -1px 0px 8px 5px white;
-	background-color: white;
-	text-align: center;
-	width: 40%;
-	color: gray;
-	font-family: 'Montserrat';
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	position: fixed;
-	padding: 20px 0px;
-	bottom: 0;
+  box-shadow: -1px 0px 8px 5px white;
+  background-color: white;
+  text-align: center;
+  width: 40%;
+  color: gray;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  padding: 20px 0px;
+  font-size: 0.8em;
+  bottom: 0;
 }
 
 .empty-sign {
-	display: flex;
-	height: 320px;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  height: 320px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .empty-sign div {
-	width: 320px;
-	height: 200px;
-	background-image: url('https://raw.githubusercontent.com/josejovian/todo-app/master/public/empty-image.jpg');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	align-self: center;
-	filter: grayscale();
+  width: 320px;
+  height: 200px;
+  background-image: url("https://raw.githubusercontent.com/josejovian/todo-app/master/public/empty-image.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  align-self: center;
+  filter: grayscale(100%);
 }
 
 .empty-sign span {
-	font-size: 1em;
-	text-align: center;
-	align-self: center;
-	font-family: 'Lato';
-	font-style: italic;
-	color: gray;
-	user-select: none;
+  font-size: 1em;
+  text-align: center;
+  align-self: center;
+  font-family: "Lato";
+  font-style: italic;
+  color: gray;
+  user-select: none;
 }
 
 @media screen and (max-width: 960px) {
-	html {
-	  width: 100%;
-	}
-	#delete-all-cont {
-		width: 95%;
-	}
-	footer {
-		width: 100%;
-	}
+  html {
+    width: 100%;
+  }
+
+  #delete-all-cont {
+    width: 95%;
+  }
+
+  footer {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=App.css.map */
